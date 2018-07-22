@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>抢先体验版 - 教你一步步搭建微信小游戏开发环境 -- 基于Cocos2d-x | Hexo</title><link rel="stylesheet" type="text/css" href="/css/normalize.css"><link rel="stylesheet" type="text/css" href="/css/highlight.css"><link rel="stylesheet" type="text/css" href="/css/font.css"><link rel="stylesheet" type="text/css" href="/css/noise.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"></head><body><article class="wrapper"><div class="post-main"><div class="nav"><nav class="container"><a class="sidebar-nav-item active" href="/">Home</a><a class="sidebar-nav-item" href="/archives">Archives</a></nav><div class="container post-meta"><div class="post-tags"><a class="post-tag-link" href="/tags/小游戏/">小游戏</a></div><div class="post-time">2017-12-30</div></div></div><div class="container post-header"><h1>抢先体验版 - 教你一步步搭建微信小游戏开发环境 -- 基于Cocos2d-x</h1></div><div class="container post-content"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>相信这两天大家都被微信推出的小游戏刷屏了吧。大家比较熟知的可能是“跳一跳”，但是其实微信首发了15款游戏，其中8款游戏用的是 Cocos 游戏引擎。下面为大家介绍一下 Windows 64 平台下如何搭建基于 Cocos2d-x  的小游戏开发环境。</p>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
+<li>Cocos 开发工具 <a href="http://www.cocos.com/download" target="_blank" rel="noopener">Cocos Creator 1.8</a></li>
+<li>微信开发者工具 <a href="https://mp.weixin.qq.com/debug/wxagame/dev/devtools/download.html?t=20171228" target="_blank" rel="noopener">1.02.1712280</a></li>
+</ul>
+<p>安装时直接选择下一步即可。<br>注意目前最新的微信开发者工具是12月28号的，可以直接用我上面给出的<a href="https://mp.weixin.qq.com/debug/wxagame/dev/devtools/download.html?t=20171228" target="_blank" rel="noopener">链接</a>去下载。</p>
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><h3 id="一、Cocos-Creator-部分"><a href="#一、Cocos-Creator-部分" class="headerlink" title="一、Cocos Creator 部分"></a>一、Cocos Creator 部分</h3><ol>
+<li><p>打开 CocosCreator （第一次打开需要登录cocos的账号，可自行申请，略），新建一个工程。这里我们建一个 Hello World 的工程。<br><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a6f89685e3355?w=1024&amp;h=680&amp;f=png&amp;s=44712" alt=""><br>Hello World 工程打开后的效果如下：<br><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a6f9cc703b053?w=1280&amp;h=720&amp;f=png&amp;s=163175" alt=""></p>
+</li>
+<li><p>设置微信开发者工具目录。这里注意选择的是安装文件夹，例如我的是<br>–&gt; D:\Program Files (x86)\Tencent\微信web开发者工具。另外 NDK，SDK，ANT 如果你配置过的话会自动识别，此处不讨论它们的安装配置。<br><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a6fc159977797?w=1280&amp;h=720&amp;f=png&amp;s=195640" alt=""></p>
+</li>
+<li>构建工程。配置如图所示，需要注意 <strong>appId</strong> 的填写 ，本来需要在微信公众平台将小程序的类别设置为小游戏类目才可以正常运行，但是由于微信目前（截至2017-12-30）尚未开放小游戏的权限设置，个人开发者无法改为这个类别，公司认证账号暂时也不行，参考此<a href="http://forum.cocos.com/t/faq/54828" target="_blank" rel="noopener">链接</a>。微信为了照顾想抢先体验小游戏开发的开发者准备了一个 appId: <strong>wx6ac3f5090a6b99c5</strong> 用于体验。所以现在可以先用此appId进行体验，等到以后微信开放了小游戏的申请后再更换回自己的appId。<br><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a701386703562?w=1280&amp;h=720&amp;f=png&amp;s=162337" alt=""><br><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a711d3ee6e909?w=1280&amp;h=720&amp;f=png&amp;s=147836" alt=""><br><strong>注意不要点 运行，目前微信开发者工具貌似有bug，如果直接点 运行，微信开发者工具将会报 “Error: 未找到入口 app.json 文件” 的错误</strong>。下面我们用手动的方式在微信开发者工具中打开项目。</li>
+</ol>
+<h3 id="二、微信开发者工具-部分"><a href="#二、微信开发者工具-部分" class="headerlink" title="二、微信开发者工具 部分"></a>二、微信开发者工具 部分</h3><ol>
+<li>打开微信开发者工具。</li>
+</ol>
+<p><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a71bad49847d5?w=334&amp;h=474&amp;f=png&amp;s=24409" alt=""><br>选择 小程序项目<br><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a71bf06da6be0?w=334&amp;h=474&amp;f=png&amp;s=13721" alt=""></p>
+<p><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a71d5e109fd52?w=626&amp;h=474&amp;f=png&amp;s=20189" alt=""></p>
+<ol start="2">
+<li><p>打开小游戏工程，项目目录为刚刚创建的 Cocos 工程目录下的 <strong>build\wechatgame</strong>。<br><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a71e08b638fa5?w=411&amp;h=474&amp;f=png&amp;s=20276" alt=""></p>
+</li>
+<li><p>在微信开发者工具中预览效果。<br><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a725399c0487a?w=1248&amp;h=779&amp;f=png&amp;s=131755" alt=""></p>
+</li>
+<li><p>扫码在微信中验证实际的效果。<br><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a725ee324d18d?w=1248&amp;h=779&amp;f=png&amp;s=152398" alt=""></p>
+</li>
+</ol>
+<p><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a7282b3ecde3b?w=146&amp;h=302&amp;f=png&amp;s=3739" alt=""></p>
+<p><img src="https://user-gold-cdn.xitu.io/2017/12/30/160a728475d123bf?w=145&amp;h=298&amp;f=png&amp;s=21356" alt=""></p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ol>
+<li><a href="http://www.cocos.com" target="_blank" rel="noopener">Cocos 官网</a></li>
+<li><a href="http://www.cocos.com/1314" target="_blank" rel="noopener">微信小程序开启游戏支持！你准备好了没？</a></li>
+<li><a href="https://v.qq.com/x/page/c05255stri7.html" target="_blank" rel="noopener">Creator v1.8 ：微信小游戏开发教程</a></li>
+<li><a href="http://forum.cocos.com/t/faq/54828" target="_blank" rel="noopener">小游戏在微信开发者工具中的问题汇总（FAQ）</a></li>
+</ol>
+</div></div><div class="post-main post-comment"></div></article><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css"><script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script><script src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js"></script><script>$(document).ready(function() {
+  $(".fancybox").fancybox();
+});
+</script></body></html>
