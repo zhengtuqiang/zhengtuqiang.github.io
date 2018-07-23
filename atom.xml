@@ -43,7 +43,7 @@
     <link href="http://yoursite.com/2018/07/23/hello-world/"/>
     <id>http://yoursite.com/2018/07/23/hello-world/</id>
     <published>2018-07-22T16:35:05.000Z</published>
-    <updated>2018-07-23T17:00:03.755Z</updated>
+    <updated>2018-07-23T17:21:57.341Z</updated>
     
     <summary type="html">
     
@@ -53,6 +53,8 @@
     
       <category term="Test" scheme="http://yoursite.com/categories/Test/"/>
     
+    
+      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -85,13 +87,15 @@
     <link href="http://yoursite.com/2017/12/30/%E6%95%99%E4%BD%A0%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E6%90%AD%E5%BB%BA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
     <id>http://yoursite.com/2017/12/30/教你一步一步搭建微信小游戏开发环境/</id>
     <published>2017-12-30T11:05:19.000Z</published>
-    <updated>2018-07-23T16:59:08.874Z</updated>
+    <updated>2018-07-23T17:02:58.072Z</updated>
     
     <summary type="html">
     
       &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;相信这两天大家都被微信推出的小游戏刷屏了吧。大家比较熟知的可能是“跳一跳”，但是其实微信首发了15款游戏，其中8款游戏用的是 Cocos 游戏引擎。下面为大家介绍一下 Windows 64 平台下如何搭建基于 Cocos2d-x  的小游戏开发环境。&lt;/p&gt;
     
     </summary>
+    
+      <category term="小游戏" scheme="http://yoursite.com/categories/%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
     
     
       <category term="小游戏" scheme="http://yoursite.com/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
