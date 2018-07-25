@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>分类: Test | 郑土强&#39;s Blog</title>
+  <title>android中的适配器模式 | 郑土强&#39;s Blog</title>
   <meta name="description" content="the place where zhengtuqiang to write something" />
   <meta name="keywords" content="android,java,algorithm" />
   <meta name="HandheldFriendly" content="True" />
@@ -12,17 +12,18 @@
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="郑土强's Blog">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="the place where zhengtuqiang to write something">
-<meta name="keywords" content="android,java,algorithm">
-<meta property="og:type" content="website">
-<meta property="og:title" content="郑土强&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/categories/Test/index.html">
+  <meta name="description" content="这是个人关于Android中的适配器模式的一点见解。">
+<meta name="keywords" content="android,设计模式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="android中的适配器模式">
+<meta property="og:url" content="http://yoursite.com/2016/07/05/android中的适配器模式/index.html">
 <meta property="og:site_name" content="郑土强&#39;s Blog">
-<meta property="og:description" content="the place where zhengtuqiang to write something">
+<meta property="og:description" content="这是个人关于Android中的适配器模式的一点见解。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-07-25T17:22:16.078Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="郑土强&#39;s Blog">
-<meta name="twitter:description" content="the place where zhengtuqiang to write something">
+<meta name="twitter:title" content="android中的适配器模式">
+<meta name="twitter:description" content="这是个人关于Android中的适配器模式的一点见解。">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -123,55 +124,71 @@
   <div class="l_body">
     <div class='container clearfix'>
       <div class='l_main'>
-        
-  <script>
-    window.subData= { title:'Category : Test'}
-  </script>
-
-<section class="post-list">
+        <article id="post-android中的适配器模式"
+  class="post white-box article-type-post"
+  itemscope itemprop="blogPost">
+	<section class='meta'>
+	<h2 class="title">
+  	<a href="/2016/07/05/android中的适配器模式/">
+    	android中的适配器模式
+    </a>
+  </h2>
+	<time>
+	  2016/7/5
+	</time>
 	
-    <div class='post-wrapper'>
-      <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/2018/07/23/hello-world/">
-        Hello World
-      </a>
-    </h2>
-    
-    <time>
-      2018/7/23
-    </time>
-		
     
     <div class='cats'>
-        <a href="/categories/Test/">Test</a>
+        <a href="/categories/android/">android</a>
     </div>
 
-  </section>
-  <section class="article typo">
-	  <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+	</section>
+	
+		<section class="toc-wrapper"></section>
+	
+	<section class="article typo">
+  	<div class="article-entry" itemprop="articleBody">
+    	<blockquote>
+<p>这是个人关于Android中的适配器模式的一点见解。 </p>
+</blockquote>
+<hr>
+<a id="more"></a>
+<p>​    Android SDK本身已经抽象好Adapter类，ListView等显示数据集的控件在其具体的代码中使用Adapter的抽象函数，然后程序员继承Adapter，实现其中的抽象函数，通过这种方式把List、数组或者其他类型的数据集以ListView想要的样子传给了ListView。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyAdapter</span> <span class="keyword">extends</span> 某某<span class="title">Adapter</span></span>&#123;     </span><br><span class="line">	<span class="keyword">private</span> List&lt;String&gt; data;          </span><br><span class="line">	<span class="meta">@Override</span>     </span><br><span class="line">	<span class="function"><span class="keyword">public</span> Object <span class="title">getItem</span><span class="params">(<span class="keyword">int</span> position)</span></span>&#123;         </span><br><span class="line">		<span class="keyword">return</span> data.get(position);<span class="comment">//通过实现抽象方法把List数据源以ListView想要的样子传给ListView </span></span><br><span class="line">	&#125;         </span><br><span class="line">    <span class="meta">@Override</span>    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getCount</span><span class="params">(<span class="keyword">int</span> position)</span></span>&#123;        </span><br><span class="line">    	<span class="keyword">return</span> data.size();<span class="comment">//通过实现抽象方法把List数据源以ListView想要的样子传给ListView     </span></span><br><span class="line">    &#125;     </span><br><span class="line">    <span class="comment">//.....省略 </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
-    
-	  <div class="readmore">
-      <a href="/2018/07/23/hello-world/">点击查看</a>
-    </div>
-    
-    
-    
-	  <div class="full-width auto-padding tags">
+  	</div>
+	  
+	  <div class="article-tags tags">
       
-        <a href="/tags/测试/">测试</a>
+        <a href="/tags/android/">android</a>
+      
+        <a href="/tags/设计模式/">设计模式</a>
       
 	  </div>
     
-  </section>
+		
+	
+		<div class="art-item-footer">
+				
+					<span class="art-item-left"><i class="icon icon-chevron-thin-left"></i>上一篇：<a href="/2017/12/30/教你一步一步搭建微信小游戏开发环境/" rel="prev"  title="抢先体验版 - 教你一步步搭建微信小游戏开发环境 -- 基于Cocos2d-x">
+						抢先体验版 - 教你一步步搭建微信小游戏开发环境 -- 基于Cocos2d-x 
+					</a></span>
+				
+				
+					<span class="art-item-right">下一篇：<a href="/2016/04/01/如何设计具有美感的api/" rel="next"  title="具有美感的API设计">
+						具有美感的API设计
+					</a><i class="icon icon-chevron-thin-right"></i></span>
+				
+		</div>
+	
+	</section>
+	
 </article>
-    </div>
-  
-</section>
-
+<script>
+	window.subData = {
+		title: 'android中的适配器模式',
+		tools: true
+	}
+</script>
 
       </div>
       <aside class='l_side'>

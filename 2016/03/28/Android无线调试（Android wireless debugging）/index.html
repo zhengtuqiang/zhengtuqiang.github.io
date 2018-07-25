@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>分类: Test | 郑土强&#39;s Blog</title>
+  <title>Android无线调试（Android wireless debugging） | 郑土强&#39;s Blog</title>
   <meta name="description" content="the place where zhengtuqiang to write something" />
   <meta name="keywords" content="android,java,algorithm" />
   <meta name="HandheldFriendly" content="True" />
@@ -12,17 +12,18 @@
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="郑土强's Blog">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="the place where zhengtuqiang to write something">
-<meta name="keywords" content="android,java,algorithm">
-<meta property="og:type" content="website">
-<meta property="og:title" content="郑土强&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/categories/Test/index.html">
+  <meta name="description" content="原文地址：http://developer.android.com/intl/zh-cn/tools/help/adb.html#wireless (需要翻墙)  ​    adb通常都是通过USB连接来使用的。但是，你也可以通过WiFi来调试。下面是步骤：   首先保证你的Android设备和电脑连接到同一个WiFi网络。该网络必须要正确地设置网络防火墙去支持adb。注意：如果你要连接一个可穿">
+<meta name="keywords" content="优质英文文章,翻译">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android无线调试（Android wireless debugging）">
+<meta property="og:url" content="http://yoursite.com/2016/03/28/Android无线调试（Android wireless debugging）/index.html">
 <meta property="og:site_name" content="郑土强&#39;s Blog">
-<meta property="og:description" content="the place where zhengtuqiang to write something">
+<meta property="og:description" content="原文地址：http://developer.android.com/intl/zh-cn/tools/help/adb.html#wireless (需要翻墙)  ​    adb通常都是通过USB连接来使用的。但是，你也可以通过WiFi来调试。下面是步骤：   首先保证你的Android设备和电脑连接到同一个WiFi网络。该网络必须要正确地设置网络防火墙去支持adb。注意：如果你要连接一个可穿">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-07-25T17:25:50.388Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="郑土强&#39;s Blog">
-<meta name="twitter:description" content="the place where zhengtuqiang to write something">
+<meta name="twitter:title" content="Android无线调试（Android wireless debugging）">
+<meta name="twitter:description" content="原文地址：http://developer.android.com/intl/zh-cn/tools/help/adb.html#wireless (需要翻墙)  ​    adb通常都是通过USB连接来使用的。但是，你也可以通过WiFi来调试。下面是步骤：   首先保证你的Android设备和电脑连接到同一个WiFi网络。该网络必须要正确地设置网络防火墙去支持adb。注意：如果你要连接一个可穿">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -123,55 +124,119 @@
   <div class="l_body">
     <div class='container clearfix'>
       <div class='l_main'>
-        
-  <script>
-    window.subData= { title:'Category : Test'}
-  </script>
-
-<section class="post-list">
+        <article id="post-Android无线调试（Android wireless debugging）"
+  class="post white-box article-type-post"
+  itemscope itemprop="blogPost">
+	<section class='meta'>
+	<h2 class="title">
+  	<a href="/2016/03/28/Android无线调试（Android wireless debugging）/">
+    	Android无线调试（Android wireless debugging）
+    </a>
+  </h2>
+	<time>
+	  2016/3/28
+	</time>
 	
-    <div class='post-wrapper'>
-      <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="/2018/07/23/hello-world/">
-        Hello World
-      </a>
-    </h2>
-    
-    <time>
-      2018/7/23
-    </time>
-		
     
     <div class='cats'>
-        <a href="/categories/Test/">Test</a>
+        <a href="/categories/优质英文文章/">优质英文文章</a>
     </div>
 
-  </section>
-  <section class="article typo">
-	  <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+	</section>
+	
+		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#原文地址：http-developer-android-com-intl-zh-cn-tools-help-adb-html-wireless-需要翻墙"><span class="toc-number">1.</span> <span class="toc-text">原文地址：http://developer.android.com/intl/zh-cn/tools/help/adb.html#wireless (需要翻墙)</span></a></li></ol></section>
+	
+	<section class="article typo">
+  	<div class="article-entry" itemprop="articleBody">
+    	<blockquote>
+<h1 id="原文地址：http-developer-android-com-intl-zh-cn-tools-help-adb-html-wireless-需要翻墙"><a href="#原文地址：http-developer-android-com-intl-zh-cn-tools-help-adb-html-wireless-需要翻墙" class="headerlink" title="原文地址：http://developer.android.com/intl/zh-cn/tools/help/adb.html#wireless (需要翻墙)"></a>原文地址：<a href="http://developer.android.com/intl/zh-cn/tools/help/adb.html#wireless" target="_blank" rel="noopener">http://developer.android.com/intl/zh-cn/tools/help/adb.html#wireless</a> (<strong>需要翻墙</strong>)</h1></blockquote>
+<hr>
+<p>​    adb通常都是通过USB连接来使用的。但是，你也可以通过WiFi来调试。下面是步骤：</p>
+<blockquote>
+<ol>
+<li>首先保证你的Android设备和电脑连接到<strong>同一个WiFi网络</strong>。该网络必须要正确地设置网络防火墙去支持adb。<br>注意：如果你要连接一个可穿戴设备（如智能手表），可以通过关闭蓝牙来使其强制连接到WiFi网络。</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>把Android设备通过USB线连接到电脑。</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li>设置目标设备监听TCP/IP连接的5555端口。<br><code>$ adb tcpip 5555</code></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="4">
+<li>拔开USB线。</li>
+</ol>
+</blockquote>
+<a id="more"></a>
+<blockquote>
+<ol start="5">
+<li>查看Android设备的IP地址。例如在谷歌nexus设置中，你可以通过 <strong>设置-&gt;关于-&gt;状态-&gt; IP 地址</strong>来查看，或者在可穿戴设置中，通过<strong>设置-&gt;WIFI 设置-&gt;高级-&gt;IP 地址</strong>来查看。</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="6">
+<li>通过以下命令来连接设备（通过IP地址来识别）。<br><code>$ adb connect 设备IP地址</code></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="7">
+<li>确认你的电脑连接到目标设备。<blockquote>
+<p><code>$ adb devices</code><br><code>List of devices attached</code><br><code>设备地址:5555 device</code></p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="8">
+<li>成功连接！</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>如果adb连接丢失：</p>
+<ol>
+<li>确认你的电脑及Android设备都是连接到同一个WiFi网络。</li>
+<li>重新从第一步操作</li>
+<li>如果还是没用，重置adb</li>
+<li><code>adb kill-server</code></li>
+<li>然后从第一步开始。</li>
+</ol>
+</blockquote>
 
-    
-	  <div class="readmore">
-      <a href="/2018/07/23/hello-world/">点击查看</a>
-    </div>
-    
-    
-    
-	  <div class="full-width auto-padding tags">
+  	</div>
+	  
+	  <div class="article-tags tags">
       
-        <a href="/tags/测试/">测试</a>
+        <a href="/tags/优质英文文章/">优质英文文章</a>
+      
+        <a href="/tags/翻译/">翻译</a>
       
 	  </div>
     
-  </section>
+		
+	
+		<div class="art-item-footer">
+				
+					<span class="art-item-left"><i class="icon icon-chevron-thin-left"></i>上一篇：<a href="/2016/04/01/如何设计具有美感的api/" rel="prev"  title="具有美感的API设计">
+						具有美感的API设计 
+					</a></span>
+				
+				
+		</div>
+	
+	</section>
+	
 </article>
-    </div>
-  
-</section>
-
+<script>
+	window.subData = {
+		title: 'Android无线调试（Android wireless debugging）',
+		tools: true
+	}
+</script>
 
       </div>
       <aside class='l_side'>

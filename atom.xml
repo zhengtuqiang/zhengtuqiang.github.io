@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-24T15:06:39.286Z</updated>
+  <updated>2018-07-25T17:29:54.779Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>置顶--TODO item--干掉拖延症</title>
+    <link href="http://yoursite.com/2018/07/26/%E7%BD%AE%E9%A1%B6--TODO%20item--%E5%B9%B2%E6%8E%89%E6%8B%96%E5%BB%B6%E7%97%87%20/"/>
+    <id>http://yoursite.com/2018/07/26/置顶--TODO item--干掉拖延症 /</id>
+    <published>2018-07-25T17:09:50.000Z</published>
+    <updated>2018-07-25T17:29:54.779Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;这是建来督促自己的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; hexo博客ejs自动生成“关于”页面&lt;/li&gt;
+&lt;li styl
+      
+    
+    </summary>
+    
+      <category term="计划任务" scheme="http://yoursite.com/categories/%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/"/>
+    
+    
+      <category term="TODO" scheme="http://yoursite.com/tags/TODO/"/>
+    
+  </entry>
+  
+  <entry>
     <title>老婆我爱你</title>
     <link href="http://yoursite.com/2018/07/23/%E8%80%81%E5%A9%86%E6%88%91%E7%88%B1%E4%BD%A0/"/>
     <id>http://yoursite.com/2018/07/23/老婆我爱你/</id>
     <published>2018-07-22T17:16:53.000Z</published>
-    <updated>2018-07-24T15:06:39.286Z</updated>
+    <updated>2018-07-25T17:26:20.311Z</updated>
     
     <summary type="html">
     
@@ -63,7 +92,7 @@
     <link href="http://yoursite.com/2018/07/23/%E6%8E%98%E9%87%91%E7%BF%BB%E8%AF%91%E4%B9%8B%E5%8D%81%E4%B8%87%E4%B8%AA%E4%B8%BA%E4%BB%80%E4%B9%88/"/>
     <id>http://yoursite.com/2018/07/23/掘金翻译之十万个为什么/</id>
     <published>2018-07-22T16:35:05.000Z</published>
-    <updated>2018-07-24T15:06:39.074Z</updated>
+    <updated>2018-07-25T17:20:14.764Z</updated>
     
     <summary type="html">
     
@@ -87,11 +116,11 @@
     <link href="http://yoursite.com/2017/12/30/%E6%95%99%E4%BD%A0%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E6%90%AD%E5%BB%BA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
     <id>http://yoursite.com/2017/12/30/教你一步一步搭建微信小游戏开发环境/</id>
     <published>2017-12-30T11:05:19.000Z</published>
-    <updated>2018-07-24T15:06:39.186Z</updated>
+    <updated>2018-07-25T17:26:16.648Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;相信这两天大家都被微信推出的小游戏刷屏了吧。大家比较熟知的可能是“跳一跳”，但是其实微信首发了15款游戏，其中8款游戏用的是 Cocos 游戏引擎。下面为大家介绍一下 Windows 64 平台下如何搭建基于 Cocos2d-x  的小游戏开发环境。&lt;/p&gt;
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;​    相信这两天大家都被微信推出的小游戏刷屏了吧。大家比较熟知的可能是“跳一跳”，但是其实微信首发了15款游戏，其中8款游戏用的是 Cocos 游戏引擎。下面为大家介绍一下 Windows 64 平台下如何搭建基于 Cocos2d-x  的小游戏开发环境。&lt;/p&gt;
     
     </summary>
     
@@ -99,6 +128,101 @@
     
     
       <category term="小游戏" scheme="http://yoursite.com/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>android中的适配器模式</title>
+    <link href="http://yoursite.com/2016/07/05/android%E4%B8%AD%E7%9A%84%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite.com/2016/07/05/android中的适配器模式/</id>
+    <published>2016-07-05T05:26:17.000Z</published>
+    <updated>2018-07-25T17:22:16.078Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;这是个人关于Android中的适配器模式的一点见解。 &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+    
+    
+      <category term="android" scheme="http://yoursite.com/tags/android/"/>
+    
+      <category term="设计模式" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>具有美感的API设计</title>
+    <link href="http://yoursite.com/2016/04/01/%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E5%85%B7%E6%9C%89%E7%BE%8E%E6%84%9F%E7%9A%84api/"/>
+    <id>http://yoursite.com/2016/04/01/如何设计具有美感的api/</id>
+    <published>2016-04-01T07:32:27.000Z</published>
+    <updated>2018-07-25T17:26:12.132Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;h1 id=&quot;原文链接：Beautiful-API-Design&quot;&gt;&lt;a href=&quot;#原文链接：Beautiful-API-Design&quot; class=&quot;headerlink&quot; title=&quot;原文链接：Beautiful API Design&quot;&gt;&lt;/a&gt;原文链接：&lt;a href=&quot;https://dzone.com/articles/beautiful-api&quot; title=&quot;Beautiful API Design&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Beautiful API Design&lt;/a&gt;&lt;/h1&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;​    当我第一次开始用java编程，我就很喜爱这门语言了。我之前是用Pascal，Delphi，Visual Basic和C语言编程的，但是java语言是如此的与众不同和优雅。另外，它的语言结构、特性和API集是如此的特别。由于它充满美学的设计，用Java编程是一件很愉快的事，这是我在用其他语言编程时没有过的。在我们使用API集时，有时会感到愉快，有时也会感到痛苦。我们在开发环境中用了不同的框架和库，这些框架和库又有很多API集。API之美取决于设计者的知识和设计能力（也叫艺术能力）。&lt;br&gt;在开发一套API，用户界面或者一个产品时，我们使用以下的原则（含有以下这些特性的可以称得上是“美”）：&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="优质英文文章" scheme="http://yoursite.com/categories/%E4%BC%98%E8%B4%A8%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0/"/>
+    
+    
+      <category term="优质英文文章" scheme="http://yoursite.com/tags/%E4%BC%98%E8%B4%A8%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="翻译" scheme="http://yoursite.com/tags/%E7%BF%BB%E8%AF%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android无线调试（Android wireless debugging）</title>
+    <link href="http://yoursite.com/2016/03/28/Android%E6%97%A0%E7%BA%BF%E8%B0%83%E8%AF%95%EF%BC%88Android%20wireless%20debugging%EF%BC%89/"/>
+    <id>http://yoursite.com/2016/03/28/Android无线调试（Android wireless debugging）/</id>
+    <published>2016-03-28T14:59:14.000Z</published>
+    <updated>2018-07-25T17:25:50.388Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;h1 id=&quot;原文地址：http-developer-android-com-intl-zh-cn-tools-help-adb-html-wireless-需要翻墙&quot;&gt;&lt;a href=&quot;#原文地址：http-developer-android-com-intl-zh-cn-tools-help-adb-html-wireless-需要翻墙&quot; class=&quot;headerlink&quot; title=&quot;原文地址：http://developer.android.com/intl/zh-cn/tools/help/adb.html#wireless (需要翻墙)&quot;&gt;&lt;/a&gt;原文地址：&lt;a href=&quot;http://developer.android.com/intl/zh-cn/tools/help/adb.html#wireless&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://developer.android.com/intl/zh-cn/tools/help/adb.html#wireless&lt;/a&gt; (&lt;strong&gt;需要翻墙&lt;/strong&gt;)&lt;/h1&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;​    adb通常都是通过USB连接来使用的。但是，你也可以通过WiFi来调试。下面是步骤：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;首先保证你的Android设备和电脑连接到&lt;strong&gt;同一个WiFi网络&lt;/strong&gt;。该网络必须要正确地设置网络防火墙去支持adb。&lt;br&gt;注意：如果你要连接一个可穿戴设备（如智能手表），可以通过关闭蓝牙来使其强制连接到WiFi网络。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;把Android设备通过USB线连接到电脑。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;设置目标设备监听TCP/IP连接的5555端口。&lt;br&gt;&lt;code&gt;$ adb tcpip 5555&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;拔开USB线。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="优质英文文章" scheme="http://yoursite.com/categories/%E4%BC%98%E8%B4%A8%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0/"/>
+    
+    
+      <category term="优质英文文章" scheme="http://yoursite.com/tags/%E4%BC%98%E8%B4%A8%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="翻译" scheme="http://yoursite.com/tags/%E7%BF%BB%E8%AF%91/"/>
     
   </entry>
   
