@@ -33,6 +33,15 @@
     function setLoadingBarProgress(num) {
       document.getElementById('loading-bar').style.width=num+"%";
     }
+  
+  	var _hmt = _hmt || [];
+    (function() {
+       var hm = document.createElement("script");
+       hm.src = "https://hm.baidu.com/hm.js?026d5b30e9703bf4d1f87d93cb791152";
+       var s = document.getElementsByTagName("script")[0]; 
+       s.parentNode.insertBefore(hm, s);
+    })();
+  
   </script>
 </head>
 
@@ -350,7 +359,7 @@
   var AZURE_SERVICE_NAME = "";
   var AZURE_INDEX_NAME = "";
   var AZURE_QUERY_KEY = "";
-  var BAIDU_API_ID = "";
+  var BAIDU_API_ID = "026d5b30e9703bf4d1f87d93cb791152";
   var SEARCH_SERVICE = "hexo";
   var ROOT = "/"||"/";
   if(!ROOT.endsWith('/'))ROOT += '/';
