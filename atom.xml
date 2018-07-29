@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-29T13:36:33.799Z</updated>
+  <updated>2018-07-29T13:53:59.846Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/07/26/%E7%BD%AE%E9%A1%B6--TODO-item--%E5%B9%B2%E6%8E%89%E6%8B%96%E5%BB%B6%E7%97%87/"/>
     <id>http://yoursite.com/2018/07/26/置顶--TODO-item--干掉拖延症/</id>
     <published>2018-07-25T17:09:50.000Z</published>
-    <updated>2018-07-29T13:36:33.799Z</updated>
+    <updated>2018-07-29T13:53:59.846Z</updated>
     
     <summary type="html">
     
@@ -32,7 +32,7 @@
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;ul&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 阅读3篇技术文章&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 阅读2篇技术文章&lt;/li&gt;
 &lt;li style=&quot;list-sty
       
     
@@ -175,9 +175,9 @@
       <category term="优质英文文章" scheme="http://yoursite.com/categories/%E4%BC%98%E8%B4%A8%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0/"/>
     
     
-      <category term="优质英文文章" scheme="http://yoursite.com/tags/%E4%BC%98%E8%B4%A8%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0/"/>
-    
       <category term="翻译" scheme="http://yoursite.com/tags/%E7%BF%BB%E8%AF%91/"/>
+    
+      <category term="优质英文文章" scheme="http://yoursite.com/tags/%E4%BC%98%E8%B4%A8%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0/"/>
     
   </entry>
   
@@ -220,9 +220,9 @@
       <category term="优质英文文章" scheme="http://yoursite.com/categories/%E4%BC%98%E8%B4%A8%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0/"/>
     
     
-      <category term="优质英文文章" scheme="http://yoursite.com/tags/%E4%BC%98%E8%B4%A8%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0/"/>
-    
       <category term="翻译" scheme="http://yoursite.com/tags/%E7%BF%BB%E8%AF%91/"/>
+    
+      <category term="优质英文文章" scheme="http://yoursite.com/tags/%E4%BC%98%E8%B4%A8%E8%8B%B1%E6%96%87%E6%96%87%E7%AB%A0/"/>
     
   </entry>
   
