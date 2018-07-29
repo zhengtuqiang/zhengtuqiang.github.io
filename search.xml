@@ -113,7 +113,7 @@
       <title>android中的适配器模式</title>
       <link href="/2016/07/05/android%E4%B8%AD%E7%9A%84%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/"/>
       <url>/2016/07/05/android%E4%B8%AD%E7%9A%84%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
-      <content type="html"><![CDATA[<blockquote><p>这是个人关于Android中的适配器模式的一点见解。 </p></blockquote><hr><a id="more"></a><p>​    Android SDK本身已经抽象好Adapter类，ListView等显示数据集的控件在其具体的代码中使用Adapter的抽象函数，然后程序员继承Adapter，实现其中的抽象函数，通过这种方式把List、数组或者其他类型的数据集以ListView想要的样子传给了ListView。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyAdapter</span> <span class="keyword">extends</span> 某某<span class="title">Adapter</span></span>&#123;     </span><br><span class="line"><span class="keyword">private</span> List&lt;String&gt; data;          </span><br><span class="line"><span class="meta">@Override</span>     </span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">getItem</span><span class="params">(<span class="keyword">int</span> position)</span></span>&#123;         </span><br><span class="line"><span class="keyword">return</span> data.get(position);<span class="comment">//通过实现抽象方法把List数据源以ListView想要的样子传给ListView </span></span><br><span class="line">&#125;         </span><br><span class="line">    <span class="meta">@Override</span>    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getCount</span><span class="params">(<span class="keyword">int</span> position)</span></span>&#123;        </span><br><span class="line">    <span class="keyword">return</span> data.size();<span class="comment">//通过实现抽象方法把List数据源以ListView想要的样子传给ListView     </span></span><br><span class="line">    &#125;     </span><br><span class="line">    <span class="comment">//.....省略 </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+      <content type="html"><![CDATA[<blockquote><p>这是个人关于Android中的适配器模式的一点见解。 </p></blockquote><hr><a id="more"></a><p>​    Android SDK本身已经抽象好Adapter类，ListView等显示数据集的控件在其具体的代码中使用Adapter的抽象函数，然后程序员继承Adapter，实现其中的抽象函数，通过这种方式把List、数组或者其他类型的数据集以ListView想要的样子传给了ListView。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyAdapter</span> <span class="keyword">extends</span> 某某<span class="title">Adapter</span></span>&#123;     </span><br><span class="line"><span class="keyword">private</span> List&lt;String&gt; data;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span>     </span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">getItem</span><span class="params">(<span class="keyword">int</span> position)</span></span>&#123;         </span><br><span class="line"><span class="keyword">return</span> data.get(position);<span class="comment">//通过实现抽象方法把List数据源以ListView想要的样子传给ListView </span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span>    </span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getCount</span><span class="params">(<span class="keyword">int</span> position)</span></span>&#123;        </span><br><span class="line"><span class="keyword">return</span> data.size();<span class="comment">//通过实现抽象方法把List数据源以ListView想要的样子传给ListView     </span></span><br><span class="line">&#125;     </span><br><span class="line"><span class="comment">//.....省略 </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
       
       <categories>
           
@@ -147,9 +147,9 @@
       
         <tags>
             
-            <tag> 优质英文文章 </tag>
-            
             <tag> 翻译 </tag>
+            
+            <tag> 优质英文文章 </tag>
             
         </tags>
       
@@ -170,9 +170,9 @@
       
         <tags>
             
-            <tag> 优质英文文章 </tag>
-            
             <tag> 翻译 </tag>
+            
+            <tag> 优质英文文章 </tag>
             
         </tags>
       
