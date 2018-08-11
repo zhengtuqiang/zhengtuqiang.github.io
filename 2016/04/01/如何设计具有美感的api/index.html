@@ -13,18 +13,18 @@
   <link rel="alternate" href="/atom.xml" title="郑土强's Blog">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="baidu-site-verification" content="TqUSuP9bgL" />
-  <meta name="description" content="原文链接：Beautiful API Design  ​    当我第一次开始用java编程，我就很喜爱这门语言了。我之前是用Pascal，Delphi，Visual Basic和C语言编程的，但是java语言是如此的与众不同和优雅。另外，它的语言结构、特性和API集是如此的特别。由于它充满美学的设计，用Java编程是一件很愉快的事，这是我在用其他语言编程时没有过的。在我们使用API集时，有时会">
-<meta name="keywords" content="翻译,优质英文文章">
+  <meta name="description" content="原文链接：Beautiful API Design   ​    当我第一次开始用java编程，我就很喜爱这门语言了。我之前是用Pascal，Delphi，Visual Basic和C语言编程的，但是java语言是如此的与众不同和优雅。另外，它的语言结构、特性和API集是如此的特别。由于它充满美学的设计，用Java编程是一件很愉快的事，这是我在用其他语言编程时没有过的。在我们使用API集时，有时">
+<meta name="keywords" content="优质英文文章,翻译">
 <meta property="og:type" content="article">
 <meta property="og:title" content="具有美感的API设计">
 <meta property="og:url" content="http://yoursite.com/2016/04/01/如何设计具有美感的api/index.html">
 <meta property="og:site_name" content="郑土强&#39;s Blog">
-<meta property="og:description" content="原文链接：Beautiful API Design  ​    当我第一次开始用java编程，我就很喜爱这门语言了。我之前是用Pascal，Delphi，Visual Basic和C语言编程的，但是java语言是如此的与众不同和优雅。另外，它的语言结构、特性和API集是如此的特别。由于它充满美学的设计，用Java编程是一件很愉快的事，这是我在用其他语言编程时没有过的。在我们使用API集时，有时会">
+<meta property="og:description" content="原文链接：Beautiful API Design   ​    当我第一次开始用java编程，我就很喜爱这门语言了。我之前是用Pascal，Delphi，Visual Basic和C语言编程的，但是java语言是如此的与众不同和优雅。另外，它的语言结构、特性和API集是如此的特别。由于它充满美学的设计，用Java编程是一件很愉快的事，这是我在用其他语言编程时没有过的。在我们使用API集时，有时">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-25T17:26:12.132Z">
+<meta property="og:updated_time" content="2018-08-11T15:41:53.260Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="具有美感的API设计">
-<meta name="twitter:description" content="原文链接：Beautiful API Design  ​    当我第一次开始用java编程，我就很喜爱这门语言了。我之前是用Pascal，Delphi，Visual Basic和C语言编程的，但是java语言是如此的与众不同和优雅。另外，它的语言结构、特性和API集是如此的特别。由于它充满美学的设计，用Java编程是一件很愉快的事，这是我在用其他语言编程时没有过的。在我们使用API集时，有时会">
+<meta name="twitter:description" content="原文链接：Beautiful API Design   ​    当我第一次开始用java编程，我就很喜爱这门语言了。我之前是用Pascal，Delphi，Visual Basic和C语言编程的，但是java语言是如此的与众不同和优雅。另外，它的语言结构、特性和API集是如此的特别。由于它充满美学的设计，用Java编程是一件很愉快的事，这是我在用其他语言编程时没有过的。在我们使用API集时，有时">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -145,20 +145,21 @@
 
 	</section>
 	
-		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#原文链接：Beautiful-API-Design"><span class="toc-number">1.</span> <span class="toc-text">原文链接：Beautiful API Design</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#简单"><span class="toc-number">1.1.</span> <span class="toc-text">简单</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#可维护性"><span class="toc-number">1.2.</span> <span class="toc-text">可维护性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#美感"><span class="toc-number">1.3.</span> <span class="toc-text">美感</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#功能"><span class="toc-number">1.4.</span> <span class="toc-text">功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一致性"><span class="toc-number">1.5.</span> <span class="toc-text">一致性</span></a></li></ol></li></ol></section>
+		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#简单"><span class="toc-text">简单</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#可维护性"><span class="toc-text">可维护性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#美感"><span class="toc-text">美感</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#功能"><span class="toc-text">功能</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一致性"><span class="toc-text">一致性</span></a></li></ol></section>
 	
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
     	<blockquote>
-<h1 id="原文链接：Beautiful-API-Design"><a href="#原文链接：Beautiful-API-Design" class="headerlink" title="原文链接：Beautiful API Design"></a>原文链接：<a href="https://dzone.com/articles/beautiful-api" title="Beautiful API Design" target="_blank" rel="noopener">Beautiful API Design</a></h1></blockquote>
+<p>原文链接：<a href="https://dzone.com/articles/beautiful-api" title="Beautiful API Design" target="_blank" rel="noopener">Beautiful API Design</a></p>
+</blockquote>
 <hr>
 <p>​    当我第一次开始用java编程，我就很喜爱这门语言了。我之前是用Pascal，Delphi，Visual Basic和C语言编程的，但是java语言是如此的与众不同和优雅。另外，它的语言结构、特性和API集是如此的特别。由于它充满美学的设计，用Java编程是一件很愉快的事，这是我在用其他语言编程时没有过的。在我们使用API集时，有时会感到愉快，有时也会感到痛苦。我们在开发环境中用了不同的框架和库，这些框架和库又有很多API集。API之美取决于设计者的知识和设计能力（也叫艺术能力）。<br>在开发一套API，用户界面或者一个产品时，我们使用以下的原则（含有以下这些特性的可以称得上是“美”）：</p>
 <a id="more"></a>
-<h2 id="简单"><a href="#简单" class="headerlink" title="简单"></a>简单</h2><p>API应该很简单就能达到程序员的期望。没有多余的行，没有多余的方法，没有多余的参数。它应该只包括你现在和将来所需要的东西。如果你在开发API，你应该反复问自己“我能不能在没有丢失功能的情况下精简API呢？”。</p>
+<h1 id="简单"><a href="#简单" class="headerlink" title="简单"></a>简单</h1><p>API应该很简单就能达到程序员的期望。没有多余的行，没有多余的方法，没有多余的参数。它应该只包括你现在和将来所需要的东西。如果你在开发API，你应该反复问自己“我能不能在没有丢失功能的情况下精简API呢？”。</p>
 <h2 id="可维护性"><a href="#可维护性" class="headerlink" title="可维护性"></a>可维护性</h2><p>如果我提供这套API，我是否可以保证它没有任何问题呢？在将来的开发是否任何的改变都会令它贬值？某些API可能会在引入到其他程序中时会埋下隐患，其中的一些更可能会暴露出错误。当发布一套API时，API的用途应该要被仔细考虑。API的用户有时会在你从未想过的情况去使用它。</p>
-<h2 id="美感"><a href="#美感" class="headerlink" title="美感"></a>美感</h2><p>如果我们相信软件开发是一门艺术，那么美感是其中最重要的一个方面。物理世界中用货物或者东西去设计和组成美感。我们同样地用API而非材料去设计和组成软件。为了具有美感，API应该是一致的，应该选择最好的命名，理解函数的成本应该是极小的，在使用API时会令人感到很舒服。</p>
-<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>一套API集应该要解决尽可能多的问题。有时候我们会发现相似的需求被分散到不同的API中，然而可能一套API已经是足够了的。这个主题与效率稍微有点关联。API设计应该提供最大程度的可重用性。一套API集应该以最少的代码提供尽可能多的功能。我们每天阅读很多代码，发现很多公式化的代码（烂代码）存在于某些框架和API集中。</p>
-<h2 id="一致性"><a href="#一致性" class="headerlink" title="一致性"></a>一致性</h2><p>相同的问题应该用相同的方法和态度去解决。你的API的行为改变类和包。你应该在你的API集里使用相同的模式即使对于相同的问题已经有很多模式了。例如，你在你的API集里应该要用相同的异常管理风格。</p>
+<h1 id="美感"><a href="#美感" class="headerlink" title="美感"></a>美感</h1><p>如果我们相信软件开发是一门艺术，那么美感是其中最重要的一个方面。物理世界中用货物或者东西去设计和组成美感。我们同样地用API而非材料去设计和组成软件。为了具有美感，API应该是一致的，应该选择最好的命名，理解函数的成本应该是极小的，在使用API时会令人感到很舒服。</p>
+<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><p>一套API集应该要解决尽可能多的问题。有时候我们会发现相似的需求被分散到不同的API中，然而可能一套API已经是足够了的。这个主题与效率稍微有点关联。API设计应该提供最大程度的可重用性。一套API集应该以最少的代码提供尽可能多的功能。我们每天阅读很多代码，发现很多公式化的代码（烂代码）存在于某些框架和API集中。</p>
+<h1 id="一致性"><a href="#一致性" class="headerlink" title="一致性"></a>一致性</h1><p>相同的问题应该用相同的方法和态度去解决。你的API的行为改变类和包。你应该在你的API集里使用相同的模式即使对于相同的问题已经有很多模式了。例如，你在你的API集里应该要用相同的异常管理风格。</p>
 <hr>
 <p>要设计“具有美感的API”，设计者应该要考虑一下的点：</p>
 <blockquote>
@@ -204,9 +205,9 @@
 	  
 	  <div class="article-tags tags">
       
-        <a href="/tags/翻译/">翻译</a>
-      
         <a href="/tags/优质英文文章/">优质英文文章</a>
+      
+        <a href="/tags/翻译/">翻译</a>
       
 	  </div>
     
@@ -279,6 +280,8 @@
     
     <ul class="entry">
     
+        <li><a class="flat-box" href="/categories/Hexo/"><div class='name'>Hexo</div><div class='badget'>1</div></a></li>
+    
         <li><a class="flat-box" href="/categories/Test/"><div class='name'>Test</div><div class='badget'>1</div></a></li>
     
         <li><a class="flat-box" href="/categories/android/"><div class='name'>android</div><div class='badget'>1</div></a></li>
@@ -302,7 +305,7 @@
 <div class="m_widget tagcloud">
     <div class="header">标签</div>
     <div class='content'>
-        <a href="/tags/TODO/" style="font-size: 14px; color: #808080">TODO</a> <a href="/tags/android/" style="font-size: 14px; color: #808080">android</a> <a href="/tags/love/" style="font-size: 14px; color: #808080">love</a> <a href="/tags/优质英文文章/" style="font-size: 17px; color: #404040">优质英文文章</a> <a href="/tags/小游戏/" style="font-size: 14px; color: #808080">小游戏</a> <a href="/tags/指南/" style="font-size: 14px; color: #808080">指南</a> <a href="/tags/测试/" style="font-size: 14px; color: #808080">测试</a> <a href="/tags/翻译/" style="font-size: 20px; color: #000">翻译</a> <a href="/tags/设计模式/" style="font-size: 14px; color: #808080">设计模式</a>
+        <a href="/tags/TODO/" style="font-size: 14px; color: #808080">TODO</a> <a href="/tags/android/" style="font-size: 14px; color: #808080">android</a> <a href="/tags/love/" style="font-size: 14px; color: #808080">love</a> <a href="/tags/优质英文文章/" style="font-size: 17px; color: #404040">优质英文文章</a> <a href="/tags/小游戏/" style="font-size: 14px; color: #808080">小游戏</a> <a href="/tags/总结/" style="font-size: 14px; color: #808080">总结</a> <a href="/tags/指南/" style="font-size: 14px; color: #808080">指南</a> <a href="/tags/测试/" style="font-size: 14px; color: #808080">测试</a> <a href="/tags/翻译/" style="font-size: 20px; color: #000">翻译</a> <a href="/tags/设计模式/" style="font-size: 14px; color: #808080">设计模式</a>
     </div>
 </div>
 
