@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-12T15:33:21.760Z</updated>
+  <updated>2018-09-24T10:06:30.066Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>汉诺塔问题研究——分治法</title>
+    <link href="http://yoursite.com/2018/09/24/%E6%B1%89%E8%AF%BA%E5%A1%94%E9%97%AE%E9%A2%98%E7%A0%94%E7%A9%B6/"/>
+    <id>http://yoursite.com/2018/09/24/汉诺塔问题研究/</id>
+    <published>2018-09-24T06:23:06.000Z</published>
+    <updated>2018-09-24T10:06:30.066Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;　　相信学过《数据结构与算法》这门课程的同学都有听过汉诺塔问题，但是可能在大学的时候没有钻研过，或者在学的时候就没有弄懂，导致没有很好的理解汉诺塔的经典解法，下面让我来给大家来分析一下。&lt;/p&gt;
+&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;　　汉诺塔（又称河内塔）问题是源于印度一个古老传说的益智玩具。大梵天创造世界的时候做了三个金刚石塔，在一个塔上从下往上按照大小顺序摞着64片黄金圆盘。大梵天命令婆罗门把圆盘从下面开始按大小顺序重新摆放在最后一个塔上。并且规定，在小圆盘上不能放大圆盘，在三个塔之间一次只能移动一个圆盘。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="算法" scheme="http://yoursite.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>《国家标准标点符号用法》</title>
